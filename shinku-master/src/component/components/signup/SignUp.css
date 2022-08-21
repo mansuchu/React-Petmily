@@ -1,0 +1,97 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 950px;
+  background-color: #fff4df;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.infoBox {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.SLabel {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+input {
+  height: 2rem;
+  width: 23rem;
+  margin-top: 1rem;
+}
+
+button {
+ background-color: #FFC865;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: end;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 5px 5px 0;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffc96550;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+
+.completeBtn {
+  margin-right: 1rem;
+}
+
+.toLogin {
+  margin-top: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header4 {
+  width: 100%;
+  height: 550px;
+  background: url(../../../../public/images/dog1.jpg);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-repeat : no-repeat;
+  background-size : cover;
+  color: white;
+  font-size : 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  font-weight: 900;
+  display: flex;
+  background: url(../../../../public/images/dog1.jpg);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer>p {
+  font-size: 13px;
+  color: black;
+}

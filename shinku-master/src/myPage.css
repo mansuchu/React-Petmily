@@ -1,0 +1,75 @@
+table{
+    width: 80%;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+th, td{
+    border: 5px solid #444444;
+    padding: 6px;
+}
+
+.main{
+    background: #fff4df;
+    width: 100%;
+    height: 800px;
+}
+.mypage {
+    background-color: #fff4df;
+    width: 100%;
+    height: auto;
+  }
+
+.form{
+    margin-left: 15%;
+}
+
+.list{
+    margin-left: 43%;
+    padding-top: 50px;
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.header2 {
+    width: 100%;
+    height: 550px;
+    background: url(../public/images/dog1.jpg);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-repeat : no-repeat;
+    background-size : cover;
+    color: white;
+    font-size : 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    cursor : url(../public/images/loveDog.png), auto;
+  
+  }
+
+  .footer {
+    width: 100%;
+    height: 100px;
+    font-weight: 900;
+    display: flex;
+    background: url(../public/images/dog1.jpg);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .footer>p {
+    font-size: 13px;
+    color: black;
+  }

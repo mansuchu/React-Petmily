@@ -1,0 +1,119 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff4df;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  /* width: 400px; */
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -5rem;
+  background-color: rgb(255, 255, 255);
+  padding: 5%;
+  border-radius: 25px;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  overflow: auto;
+}
+
+.LLabel {
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center; */
+
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+}
+
+input {
+  /* height: 3rem;
+  width: 20rem;
+  margin-top: 1rem; */
+  height: 3rem;
+  width: 20rem;
+  margin-top: 1rem;
+  border-radius: 15px;
+  text-align: center;
+  width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  /* box-sizing: border-box; */
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 1px;
+  font-family: "Ubuntu", sans-serif;
+
+}
+
+.button {
+  background-color: #FFC865;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: end;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 5px 5px 0;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ffc96550;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+.toSignup {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: #9d9d9d;
+  padding-top: 30px;
+}
+
+.header3 {
+  width: 100%;
+  height: 550px;
+  background: url(../../../../public/images/dog1.jpg);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-repeat : no-repeat;
+  background-size : cover;
+  color: white;
+  font-size : 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  cursor : url(../../../../public/images/loveDog.png), auto;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  font-weight: 900;
+  display: flex;
+  background: url(../../../../public/images/dog1.jpg);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer>p {
+  font-size: 13px;
+  color: black;
+}
