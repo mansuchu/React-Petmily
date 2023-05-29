@@ -11,7 +11,6 @@ const Prodect = () => {
   const [searchProdect, setSearchProdect] = useState([]);
   const [detailModal, setDetailModal] = useState(false);
   const [currentSelect, setCurrentSelect] = useState({});
-  
 
   useEffect(() => {
     axios.get("http://localhost:4000/menu").then((res) => {
@@ -24,8 +23,6 @@ const Prodect = () => {
     if (e.key === "Enter") {
       console.log(e.target.value);
 
-
-
       if (e.target.value === "") {
         setSearchProdect(prodect);
         return;
@@ -33,28 +30,20 @@ const Prodect = () => {
 
       let tempList = [];
 
-
-
       for (let i = 0; i < prodect.length; i++) {
         if (prodect[i].place === e.target.value) {
           tempList.push(prodect[i]);
         }
-
       }
 
       setSearchProdect(tempList);
-
-    }      
-
-
-
-  }
-
+    }
+  };
 
   const parentsFunction = (e) => {
     setDetailModal(true);
     setCurrentSelect(e);
-    
+
     console.log(e);
   };
 
@@ -68,7 +57,6 @@ const Prodect = () => {
             type="text"
             placeholder="지역을 입력해주세요."
           />
-
         </div>
       </p>
       <div className="formProdect">
@@ -78,12 +66,15 @@ const Prodect = () => {
           INTRODUCE
         </h1>
         {searchProdect.map((item, idx) => (
-          <ProdectItem prodect={item} key={idx} parentsFunc={parentsFunction}/>
+          <ProdectItem prodect={item} key={idx} parentsFunc={parentsFunction} />
         ))}
-        
-      {detailModal && (
-        <Modal desc={currentSelect} closeModal={() => setDetailModal(!detailModal)} />
-      )}
+
+        {detailModal && (
+          <Modal
+            desc={currentSelect}
+            closeModal={() => setDetailModal(!detailModal)}
+          />
+        )}
       </div>
     </>
   );
