@@ -48,6 +48,14 @@
       "id": "admin",
       "password": "admin",
       "nickname": "관리자"
+    },
+    {
+      "name": "user01",
+      "password": "user01",
+      "pwcheck": "user01",
+      "email": "user01",
+      "phone": "000",
+      "id": "v_lmsId"
     }
   ],
   "menu": [

@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: 'KOTRAHOPE';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
   font-weight: normal;
@@ -10,12 +10,12 @@
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/TTCrownMychewR.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'KOTRAHOPE';
+  font-family: "KOTRAHOPE";
   letter-spacing: 1.5px;
 }
 
@@ -26,25 +26,24 @@ a {
 /* 상단 배너 */
 .header {
   width: 100%;
-  position: relative; 
+  position: relative;
   transition: all 0.75s;
   overflow: hidden;
-  cursor : url(/public/images/loveDog.png), auto;
+  cursor: url(/public/images/loveDog.png), auto;
 }
 
 .header:hover {
-  opacity:.8;
+  opacity: 0.8;
   transition: all 0.75s;
 }
-
 
 /* 상단 배너 이미지, 효과 */
 .backdrop {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   width: 1920px;
   height: auto;
-  size : cover;
-  font-family: 'Nanum Gothic', sans-serif;
+  size: cover;
+  font-family: "Nanum Gothic", sans-serif;
   font-weight: bold;
   color: white;
   z-index: -1;
@@ -80,14 +79,13 @@ a {
 #banner:hover .logo {
   opacity: 1;
   transition: all 0.75s;
-  
 }
 
 .txt {
   position: absolute;
   z-index: 2;
   opacity: 0;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   font-weight: bold;
   font-size: 35px;
   padding-left: 600px;
@@ -95,11 +93,10 @@ a {
   transition: all 0.75s;
 }
 #banner:hover .txt {
-  color: #FFF4DF;
+  color: #fff4df;
   opacity: 1;
   transition: all 0.75s;
 }
-
 
 /* 네비게이션 메뉴 */
 .nav-wrap {
@@ -119,11 +116,11 @@ a {
   margin-left: 30px;
 }
 
-.nav-left>ul {
+.nav-left > ul {
   list-style: none;
 }
 
-.nav-left>ul>li>a {
+.nav-left > ul > li > a {
   color: white;
   font-weight: 600;
   list-style: none;
@@ -137,7 +134,7 @@ a {
   display: inline-block;
 }
 
-.nav-right>ul>li {
+.nav-right > ul > li {
   font-size: 30px;
   color: white;
   margin: 25px 10px 0 0;
@@ -145,92 +142,102 @@ a {
   list-style: none;
 }
 
-.nav-right>ul>li>a {
+.nav-right > ul > li > a {
   color: white;
   font-weight: 500;
 }
 
-.nav-right>ul>li>li>a {
+.nav-right > ul > li > li > a {
   color: white;
   font-weight: 500;
 }
-
 
 /* 바디 내용 */
 .intruduce {
   width: 100%;
-  background: #FFF4DF;
+  background: #fff4df;
   height: 900px;
 }
 
-.intruduce>div>ul {
+.intruduce > div > ul {
   position: relative;
   width: 100%;
 }
 
-.intruduce>div>ul>li {
+.intruduce > div > ul > li {
   float: left;
   position: absolute;
   width: 25%;
   overflow: hidden;
   margin-top: 100px;
 }
-.intruduce>div>ul>li:nth-child(1) { left:calc(25%*0); top:calc(475.75px*0); }
-.intruduce>div>ul>li:nth-child(2) { left:calc(25%*1); top:calc(475.75px*0); }
-.intruduce>div>ul>li:nth-child(3) { left:calc(25%*2); top:calc(475.75px*0); }
-.intruduce>div>ul>li:nth-child(4) { left:calc(25%*3); top:calc(475.75px*0); }
-
-.intruduce>div>ul>li>div { 
-  margin: 0 80px; 
-  position:relative; 
-  display:block; 
-  width:100%; 
-  cursor:url(https://cdn-icons-png.flaticon.com/128/4968/4968244.png),auto; 
+.intruduce > div > ul > li:nth-child(1) {
+  left: calc(25% * 0);
+  top: calc(475.75px * 0);
+}
+.intruduce > div > ul > li:nth-child(2) {
+  left: calc(25% * 1);
+  top: calc(475.75px * 0);
+}
+.intruduce > div > ul > li:nth-child(3) {
+  left: calc(25% * 2);
+  top: calc(475.75px * 0);
+}
+.intruduce > div > ul > li:nth-child(4) {
+  left: calc(25% * 3);
+  top: calc(475.75px * 0);
 }
 
-.intruduce>div>ul>li>div>span {
-  display:block; 
-  width:60%; 
-  outline:8px solid rgba(253,217,71, 0); 
-  outline-offset:-58px; 
-  transition:all 0.4s;
-}
-.intruduce>div>ul>li>div:hover>span {
-  outline:9px solid rgba(253,217,71, .98);
+.intruduce > div > ul > li > div {
+  margin: 0 80px;
+  position: relative;
+  display: block;
+  width: 100%;
+  cursor: url(https://cdn-icons-png.flaticon.com/128/4968/4968244.png), auto;
 }
 
-.intruduce>div>ul>li>div>span>img {
-  z-index:1; 
-  position:relative;
-  
-  width:100%; 
-  opacity:1; 
-  transform:scale(1); 
-  transition:all 0.4s;
-  
+.intruduce > div > ul > li > div > span {
+  display: block;
+  width: 60%;
+  outline: 8px solid rgba(253, 217, 71, 0);
+  outline-offset: -58px;
+  transition: all 0.4s;
 }
-.intruduce>div>ul>li>div>span:hover>img {
-  opacity:.10; 
-  transform:scale(1.1);
+.intruduce > div > ul > li > div:hover > span {
+  outline: 9px solid rgba(253, 217, 71, 0.98);
 }
 
-.intruduce>div>ul>li>div>span>strong {
-  z-index:2; 
-  position:absolute; 
-  left:0; 
-  top:50%; 
-  margin-top:-8px; 
-  width:60%; 
-  text-align:center; 
-  height:16px; 
-  font-size: 29px; 
-  color:#000; 
-  font-weight:bold; 
-  opacity:0; 
-  transition:all 0.4s; 
-  text-transform:uppercase;
+.intruduce > div > ul > li > div > span > img {
+  z-index: 1;
+  position: relative;
+
+  width: 100%;
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.4s;
 }
-.intruduce>div>ul>li>div>span:hover>strong {
+.intruduce > div > ul > li > div > span:hover > img {
+  opacity: 0.1;
+  transform: scale(1.1);
+}
+
+.intruduce > div > ul > li > div > span > strong {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -8px;
+  width: 60%;
+  text-align: center;
+  height: 16px;
+  font-size: 29px;
+  color: #000;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 0.4s;
+  text-transform: uppercase;
+}
+.intruduce > div > ul > li > div > span:hover > strong {
   opacity: 1;
 }
 
@@ -239,12 +246,11 @@ a {
   padding-left: 33%;
 }
 
-.intTitle>h1 {
+.intTitle > h1 {
   font-size: 65px;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   color: white;
 }
-
 
 .footer {
   width: 100%;
@@ -257,7 +263,7 @@ a {
   flex-direction: column;
 }
 
-.footer>p {
+.footer > p {
   font-size: 13px;
   color: black;
 }
